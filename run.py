@@ -7,7 +7,8 @@ Enter 2 for Show All patients
 Enter 3 for search a specific Patient
 Enter 4 for delete a patient
 Enter 5 to delete the all data
-Enter 6 for exit
+Enter 6 to update a patient
+Enter 7 for exit
     """)
 
     option = int(input("Choose a option: "))
@@ -21,7 +22,9 @@ Enter 6 for exit
         delete_patient()
     elif option == 5:
         delete_all_data()
-    if option == 6:
+    elif option == 6:
+        update_patient()
+    if option == 7:
         print("See You Next Time.")
         break
 
